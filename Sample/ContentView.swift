@@ -16,12 +16,12 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 HStack{
-                    VstacksView()
-                    VstacksView()
-                    VstacksView()
+                    VstacksView(isActivated: $isTapped) // $ 싸인을 넣어 바인딩 처리한다.
+                    VstacksView(isActivated: $isTapped) // $ 싸인을 넣어 바인딩 처리한다.
+                    VstacksView(isActivated: $isTapped) // $ 싸인을 넣어 바인딩 처리한다.
                 } // Hstack
                 .padding(isTapped ? 20.0 : 10.0)
-                .background(isTapped ? Color.blue : Color.red)
+                .background(isTapped ? Color.yellow : Color.green)
                 .onTapGesture {
                     withAnimation {
                         self.isTapped.toggle()
@@ -32,7 +32,7 @@ struct ContentView: View {
                 Text("\(isTapped.description)")
                 
                 NavigationLink(
-                    destination: MytextView(),
+                    destination: MytextView(isActivated: $isTapped),
                     label: {
                         Text("네비게이션!")
                             .bold()
