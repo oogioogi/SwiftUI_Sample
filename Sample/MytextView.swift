@@ -31,7 +31,7 @@ struct MytextView: View {
             Text("콘턴터 뷰 활성화 상태 : \(isActivated.description)")
                 .font(.system(size:15))
                 .fontWeight(.bold)
-                .padding(.top)
+                .padding(.top, 10)
                 Spacer()
         }
         .onTapGesture {
