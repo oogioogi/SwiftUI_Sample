@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct VstacksView: View {
+    // 데이터 연동 시킬 바인딩을 한다
+    @Binding var isActivated: Bool
+    // 바인딩을 쓸려면 기본 생성자를 만든다
+    init(isActivated: Binding<Bool> = .constant(false)) {
+        _isActivated = isActivated
+    }
+    
     var body: some View {
         VStack{
             Text("1")
@@ -20,8 +27,9 @@ struct VstacksView: View {
                 .bold()
                 .font(.title)
         }
-        .padding()
-        .background(Color.yellow)
+        .padding(isActivated ? 10.0 : 0)
+        .background(isActivated ? Color.purple : Color.red)
+        
     }
     
 }

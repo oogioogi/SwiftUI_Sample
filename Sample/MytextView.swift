@@ -11,8 +11,14 @@ struct MytextView: View {
     
     @State private var index: Int = 0
     
+    @Binding var isActivated: Bool
+    
+    init(isActivated: Binding<Bool> = .constant(false)) {
+        _isActivated = isActivated
+    }
+    
     private var colorChange: [Color] = [
-        .blue,.clear,.gray,.orange,.pink,.purple,.red,.white,.yellow
+        .clear,.gray,.orange,.pink,.purple,.red,.white,.yellow
     ]
     
     var body: some View {
@@ -22,6 +28,10 @@ struct MytextView: View {
                 .font(.system(size:35))
                 .fontWeight(.bold)
                 .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            Text("콘턴터 뷰 활성화 상태 : \(isActivated.description)")
+                .font(.system(size:15))
+                .fontWeight(.bold)
+                .padding(.top)
                 Spacer()
         }
         .onTapGesture {
