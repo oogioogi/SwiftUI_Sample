@@ -13,6 +13,7 @@
 		862F6A7E267C49BE00C17C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862F6A7D267C49BE00C17C2B /* Assets.xcassets */; };
 		862F6A81267C49BE00C17C2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862F6A80267C49BE00C17C2B /* Preview Assets.xcassets */; };
 		862F6A84267C49BE00C17C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862F6A82267C49BE00C17C2B /* LaunchScreen.storyboard */; };
+		862F6A8D267C4B7A00C17C2B /* Vstacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F6A8C267C4B7A00C17C2B /* Vstacks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		862F6A80267C49BE00C17C2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		862F6A83267C49BE00C17C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		862F6A85267C49BE00C17C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862F6A8C267C4B7A00C17C2B /* Vstacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vstacks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				862F6A77267C49BD00C17C2B /* AppDelegate.swift */,
 				862F6A79267C49BD00C17C2B /* SceneDelegate.swift */,
 				862F6A7B267C49BD00C17C2B /* ContentView.swift */,
+				862F6A8C267C4B7A00C17C2B /* Vstacks.swift */,
 				862F6A7D267C49BE00C17C2B /* Assets.xcassets */,
 				862F6A82267C49BE00C17C2B /* LaunchScreen.storyboard */,
 				862F6A85267C49BE00C17C2B /* Info.plist */,
@@ -148,6 +151,7 @@
 				862F6A78267C49BD00C17C2B /* AppDelegate.swift in Sources */,
 				862F6A7A267C49BD00C17C2B /* SceneDelegate.swift in Sources */,
 				862F6A7C267C49BD00C17C2B /* ContentView.swift in Sources */,
+				862F6A8D267C4B7A00C17C2B /* Vstacks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
