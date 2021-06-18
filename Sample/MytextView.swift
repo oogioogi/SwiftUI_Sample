@@ -18,8 +18,8 @@ struct MytextView: View {
     var body: some View {
         VStack{
             Spacer()
-            Text("My Text view \(index) : \(colorChange.count)")
-                .font(.system(size:40))
+            Text("배경 아이템 인덱스 [ \(index) ]")
+                .font(.system(size:35))
                 .fontWeight(.bold)
                 .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 Spacer()
